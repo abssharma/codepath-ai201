@@ -7,3 +7,6 @@
 ![generic_vs_rag](./assets/generic_vs_rag.png)
 
 1. fork the [starter](https://github.com/codepath/ai201-project1-unofficial-guide-starter-v2026) repo
+2. `brew install python@3.13`
+3. `python3.13 -m venv newvenv`
+4. `source newvenv/bin/activate`
