@@ -21,11 +21,43 @@
     (best distance 0.254, cutoff 0.6)
 
     The housing lottery is not entirely random in the way most people assume. 
-    While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary
-
-    (*admin_housing_lottery.txt*).
+    While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary (*admin_housing_lottery.txt*).
 
     Sources retrieved: admin_housing_lottery.txt, admin_parking_permits.txt, advising_registration.txt, housing_morrow_house.txt, housing_tamsin_court.txt
 
     0 model calls this session, 1 served from cache
     ```
+
+10. `python3 test.py`
+
+    ```
+    AI201 environment check
+    ------------------------------------------------------------
+    [PASS] Python version
+            3.13.15 on Darwin
+    [PASS] Virtual environment
+            /Users/xxx/Downloads/ai201-project1-unofficial-guide-starter-v2026/newvenv
+    [PASS] Pinned packages
+            all 7 import cleanly
+    [PASS] Free disk space
+            345.6 GB
+    [PASS] Memory
+            16.0 GB
+    [PASS] Key hygiene
+            .env is ignored by git
+    [PASS] API key
+            loaded, 53 characters
+    [ .. ] Embedding model — first run downloads ~80 MB, this is the slow part
+    [PASS] Embedding model
+            all-MiniLM-L6-v2 loaded, 384-dim vectors
+    [PASS] Vector store
+            Chroma round trip on a cosine collection
+    [PASS] Model call
+            gemini-3.5-flash-lite replied "Ready."
+    ------------------------------------------------------------
+    10 passed, 0 failed, 0 to look at, 0 skipped
+
+    You're set. See you in class.
+    ```
+
+11. 
