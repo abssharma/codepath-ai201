@@ -6,7 +6,7 @@
 **building a RAG system**
 ![generic_vs_rag](./assets/generic_vs_rag.png)
 
-**steps**
+**setup**
 1. fork the [starter](https://github.com/codepath/ai201-project1-unofficial-guide-starter-v2026) repo
 2. `brew install python@3.13`
 3. `python3.13 -m venv newvenv`
@@ -14,33 +14,7 @@
 5. `pip install -r requirements.txt`
 6. [google aistudio](https://aistudio.google.com/) → sidebar → get api key (key icon)
 7. add api key to `.env`
-8. `python3 app.py index` (downloads 80 GB model)
-
-    ```
-    Corpus: campus_life
-
-    loaded   88 documents, 27,908 characters, ~317 characters per document
-    chunked  88 chunks, 317 characters on average (shortest 178, longest 549), produced by chunker.py::split_documents
-    embedding 88 chunks (first run downloads the model)...
-    stored   88 chunks in 8.1s
-
-    Ready. Try: python app.py ask "your question here"
-    ```
-
-9. `python3 app.py ask "is the housing lottery random?"`
-
-    ```
-    (best distance 0.254, cutoff 0.6)
-
-    The housing lottery is not entirely random in the way most people assume. 
-    While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary (*admin_housing_lottery.txt*).
-
-    Sources retrieved: admin_housing_lottery.txt, admin_parking_permits.txt, advising_registration.txt, housing_morrow_house.txt, housing_tamsin_court.txt
-
-    0 model calls this session, 1 served from cache
-    ```
-
-10. `python3 test.py`
+8. `python3 test.py`
 
     ```
     AI201 environment check
@@ -72,7 +46,34 @@
     You're set. See you in class.
     ```
 
-11. `python3 app.py --corpus advice_threads chunks -n 1`
+**milestone 1**
+1. `python3 app.py index` (downloads 80 GB model)
+
+    ```
+    Corpus: campus_life
+
+    loaded   88 documents, 27,908 characters, ~317 characters per document
+    chunked  88 chunks, 317 characters on average (shortest 178, longest 549), produced by chunker.py::split_documents
+    embedding 88 chunks (first run downloads the model)...
+    stored   88 chunks in 8.1s
+
+    Ready. Try: python app.py ask "your question here"
+    ```
+
+2. `python3 app.py ask "is the housing lottery random?"`
+
+    ```
+    (best distance 0.254, cutoff 0.6)
+
+    The housing lottery is not entirely random in the way most people assume. 
+    While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary (*admin_housing_lottery.txt*).
+
+    Sources retrieved: admin_housing_lottery.txt, admin_parking_permits.txt, advising_registration.txt, housing_morrow_house.txt, housing_tamsin_court.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+3. `python3 app.py --corpus advice_threads chunks -n 1`
 
     ```
     26 chunks total. Showing 1, spread across the corpus.
@@ -102,4 +103,5 @@
     without reading what came before or after?
     ```
 
-12. 
+**milestone 2**
+1. 
