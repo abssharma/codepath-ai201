@@ -1,0 +1,9 @@
+## week 1 notes
+
+- activity --> open any AI tool (ChatGPT, Claude, Gemini etc.) and ask it something specific about a show, film, or team you know really well. It should be detailed enough that you'd catch it if it got it wrong.
+    - so whether or not the LLM is right, the tone is usually going to be identical, whether its right or making something up. so you cant usually tell from the output
+
+**building a RAG system**
+![generic_vs_rag](./assets/generic_vs_rag.png)
+
+1. fork the [starter](https://github.com/codepath/ai201-project1-unofficial-guide-starter-v2026) repo
