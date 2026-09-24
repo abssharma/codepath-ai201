@@ -14,8 +14,5 @@
 5. `pip install -r requirements.txt`
 6. [google aistudio](https://aistudio.google.com/) → sidebar → get api key (key icon)
 7. add api key to `.env`
-8. `python3 app.py index`
-    ```
-    downloads 80GB model
-    ```
+8. `python3 app.py index` (downloads 80 GB model)
 9. `python3 app.py ask "is the housing lottery random?"`
