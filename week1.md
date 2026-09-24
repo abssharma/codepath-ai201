@@ -238,3 +238,82 @@
     ```
 
 ---
+
+**milestone 4**
+1. `python3 app.py ask "Where on campus can I do the cheapest complete wash-and-dry laundry cycle, and how much does it cost?"`
+
+    ```
+    (best distance 0.338, cutoff 0.6)
+
+    Based on the documents, the cheapest complete wash-and-dry laundry cycle can be done in Morrow House for a total of $2.75 ($1.50 for the wash and $1.25 forthe dry). 
+
+    Source: housing_morrow_house_laundry.txt
+
+    Sources retrieved: housing_aldridge_hall_laundry.txt, housing_calder_annexe_laundry.txt, housing_innisfree_hall_laundry.txt, housing_morrow_house_laundry.txt, housing_old_brewhouse_laundry.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+2. `python3 app.py ask "Which residence offers the most independent living arrangement and a full kitchen?"`
+
+    ```
+    (best distance 0.502, cutoff 0.6)
+
+    Tamsin Court offers the most independent housing on campus and is the only option with a full kitchen. 
+
+    Source: housing_tamsin_court.txt
+
+    Sources retrieved: dining_north_kitchen.txt, housing_aldridge_hall.txt, housing_fenwick_court.txt, housing_innisfree_hall.txt, housing_tamsin_court.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+3. `python3 app.py ask "If I want the shortest wait for lunch, which dining hall should I choose?"`
+
+    ```
+    (best distance 0.342, cutoff 0.6)
+
+    You should choose North Kitchen, which has a wait figure of none. 
+
+    Source: `dining_north_kitchen_followup.txt`
+
+    Sources retrieved: dining_halden_hall.txt, dining_halden_hall_followup.txt, dining_north_kitchen_followup.txt, dining_pellew_dining_hall_followup.txt, dining_the_ridgeway_cafe_followup.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+4. `python3 app.py ask "How long should I expect the walk from Fenwick Court to central campus to take in winter?"`
+
+    ```
+    (best distance 0.259, cutoff 0.6)
+
+    The walk from Fenwick Court to central campus normally takes 18 minutes, but you should add four minutes in winter because the path past the pond ices over(transit_walking.txt, housing_fenwick_court.txt).
+
+    Sources retrieved: health_center.txt, housing_fenwick_court.txt, transit_shuttle.txt, transit_walking.txt, winter_gear.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+5. `python3 app.py ask "Which course has no final exam, requires a lab, and drops the lowest of three midterms?"`
+
+    ```
+    best distance 0.438, cutoff 0.6)
+
+    PHYS 130 Mechanics has no final exam, a compulsory lab, three midterms, and drops the lowest midterm (from **course_phys_130.txt** and **course_phys_130_exams.txt**).
+
+    Sources retrieved: course_cs_210.txt, course_cs_210_exams.txt, course_math_220_exams.txt, course_phys_130.txt, course_phys_130_exams.txt
+
+    0 model calls this session, 1 served from cache
+    ```
+
+6. `python3 app.py ask "What is the capital of Mongolia?"`
+
+    ```
+    (best distance 0.825, cutoff 0.6)
+
+    I don't have enough information about that.
+
+    0 model calls this session
+    ```
+
+---
