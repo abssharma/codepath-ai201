@@ -17,15 +17,15 @@
 8. `python3 app.py index` (downloads 80 GB model)
 9. `python3 app.py ask "is the housing lottery random?"`
 
-```
-(best distance 0.254, cutoff 0.6)
+    ```
+    (best distance 0.254, cutoff 0.6)
 
-The housing lottery is not entirely random in the way most people assume. 
-While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary
+    The housing lottery is not entirely random in the way most people assume. 
+    While rising sophomores get a number drawn at random, juniors and seniors are ordered first by accumulated credit hours, with random tie-breaking used only when necessary
 
-(*admin_housing_lottery.txt*).
+    (*admin_housing_lottery.txt*).
 
-Sources retrieved: admin_housing_lottery.txt, admin_parking_permits.txt, advising_registration.txt, housing_morrow_house.txt, housing_tamsin_court.txt
+    Sources retrieved: admin_housing_lottery.txt, admin_parking_permits.txt, advising_registration.txt, housing_morrow_house.txt, housing_tamsin_court.txt
 
-0 model calls this session, 1 served from cache
-```
+    0 model calls this session, 1 served from cache
+    ```
