@@ -46,6 +46,8 @@
     You're set. See you in class.
     ```
 
+---
+
 **milestone 1**
 1. `python3 app.py index` (downloads 80 GB model)
 
@@ -102,6 +104,8 @@
     For each one, ask: could someone answer a question using only this,
     without reading what came before or after?
     ```
+
+---
 
 **milestone 2**
 1. 
