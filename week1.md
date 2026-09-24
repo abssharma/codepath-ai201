@@ -15,6 +15,18 @@
 6. [google aistudio](https://aistudio.google.com/) → sidebar → get api key (key icon)
 7. add api key to `.env`
 8. `python3 app.py index` (downloads 80 GB model)
+
+    ```
+    Corpus: campus_life
+
+    loaded   88 documents, 27,908 characters, ~317 characters per document
+    chunked  88 chunks, 317 characters on average (shortest 178, longest 549), produced by chunker.py::split_documents
+    embedding 88 chunks (first run downloads the model)...
+    stored   88 chunks in 8.1s
+
+    Ready. Try: python app.py ask "your question here"
+    ```
+
 9. `python3 app.py ask "is the housing lottery random?"`
 
     ```
@@ -60,4 +72,34 @@
     You're set. See you in class.
     ```
 
-11. 
+11. `python3 app.py --corpus advice_threads chunks -n 1`
+
+    ```
+    26 chunks total. Showing 1, spread across the corpus.
+
+    Paste these into your README under Sample Chunks. The rubric asks
+    for the source file and the function that produced them — both are
+    printed for you below.
+
+    ======================================================================
+    Chunk 1  |  source: thread_bike_commute.txt#0  |  produced by: chunker.py::fallback_split
+    ======================================================================
+    THREAD: Is a bike worth it for a 20 minute walk commute?
+
+    --- reply 1 (14 votes) ---
+    Yeah. Cuts an 18 minute walk to about 6. The thing nobody mentions is storage — covered bike parking exists at three buildings and is full by 9am at all three.
+
+    --- reply 2 (9 votes) ---
+    Counterpoint, I sold mine. Between November and March the paths are either icy or salted and salt destroys a drivetrain in one season.
+
+    --- reply 3 (22 votes) ---
+    Both true. I keep a cheap bike for September to November and walk the rest of the year. Total cost was about $120 for the bike and I don't care what happens to it.
+
+    --- reply 4 (5 votes) ---
+    If you do get one, the campus does free registration and it's the only reason I got mine back after it was taken.
+
+    For each one, ask: could someone answer a question using only this,
+    without reading what came before or after?
+    ```
+
+12. 
