@@ -6,6 +6,8 @@
 **building a RAG system**
 ![generic_vs_rag](./assets/generic_vs_rag.png)
 
+---
+
 **setup**
 1. fork the [starter](https://github.com/codepath/ai201-project1-unofficial-guide-starter-v2026) repo
 2. `brew install python@3.13`
@@ -103,6 +105,24 @@
 
     For each one, ask: could someone answer a question using only this,
     without reading what came before or after?
+    ```
+
+4. `python3 app.py corpora`
+
+    ```
+    advice_threads
+        Question-and-answer threads with several people replying and disagreeing. Uneven lengths; answers spread across replies. (23 documents)
+
+    * campus_life
+        Short posts about student life. ~88 documents of 1–3 paragraphs. Useful information usually sits in a single sentence. (88 documents)
+
+    city_guides
+        Long travel guides divided into labelled sections — nine towns and five guides that cut across them. Information is organised by heading and spread across paragraphs. (14 documents)
+
+    practice
+        Not for your project — the small corpus used for the in-class follow-along. (28 documents)
+
+    * = current default, set in config.py (AI201_CORPUS in .env wins)
     ```
 
 ---
